@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luca A. Rampinelli">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidade 3</title>
+</head>
+
+<body>
+    <h1 id="inicio">Testando outras tags</h1>
+    <div>
+        <p>Vamos observar o comportamento de outras tags. São elas:</p>
+
+        <ul>
+            <li> <a href="#imagem"><em>Imagens</em> </a> </li>
+            <li> <a href="#links"><em>Links e Ancoras</em> </a></li>
+            <li> <a href="#listas"><em>Listas</em> </a></li>
+            <li> <a href="#tabelas"><em>Tabelas</em> </a></li>
+            <li> <a href="#formularios"><em>Formulários</em> </a></li>
+        </ul>
+    </div>
+
+    <!-- Imagens <img> -->
+    <div id="imagem">
+        <h2>Imagens (img)</h2>
+        <img src="https://i1.wp.com/fanaru.com/sword-art-online/image/95525-sword-art-online-knife.gif"
+            alt="Kirito-sama" title="Kirito-sama">
+        <img src="https://i1.wp.com/fanaru.com/sword-art-online/image/95525-sword-art-online-knife.gif"
+            alt="Kirito-sama">
+        <p> Se percebe que as imagens são do tipo <b>in-line block</b>.
+            <br>
+            Podemos simplesmente utilizar a tag <i>img</i> e
+            inseri as imagens, mas também podemos utilizar as tags
+            <i>figure</i> e <i>figcaption</i>:
+        </p>
+
+        <figure>
+            <figcaption>Essa é uma gif</figcaption>
+            <img src="https://media.tenor.com/images/f1828d6bddc96298b8d4d9fc4b326bdc/tenor.gif" alt="Kirito Swords">
+
+            <figcaption><br>Titulo superior</figcaption>
+            <img src="https://media.tenor.com/images/f1828d6bddc96298b8d4d9fc4b326bdc/tenor.gif" alt="Kirito Swords">
+            <figcaption>Descrição</figcaption>
+        </figure>
+        <p>
+            Observe como o tipo de <i>display</i> foi alterado para <b>block</b>
+        </p>
+        <p>Notas: Você até pode definir <i>width</i> e <i>height</i> como atributo da tag <i>img</i>, no entanto não é
+            uma boa prática visto que o recomendado realizar a estilização dos elementos <b>apenas através do CSS</b>
+        </p>
+    </div>
+
+    <!-- Links <a></a> -->
+    <div>
+        <h2 id="links">Links e Ancoras (a)</h2>
+        <p>
+            Podemos ver os 2 tipos de links:
+        <ul>
+            <li>Externo</li>
+            <li>Interno</li>
+            <li>Ancora</li>
+        </ul>
+        </p>
+        <p>Temos também o atributo <i>target</i> que define o comportamento do navegador ao clicarmos no link:</p>
+        <ul>
+            <li>_self: Abre o link na mesma aba, ou seja, o site será sobreposto pela página contida no link;</li>
+            <li>_black: Abre o link em uma nova guia (aba), ou seja, o site continuará aberto porém o levará para a nova
+                aba aberta para que o usuário possa acessa-la.</li>
+        </ul>
+        <p>
+            <a href="https://i1.wp.com/fanaru.com/sword-art-online/image/95525-sword-art-online-knife.gif"
+                target="blank"><b>Primeira GIF</b> <i>(_blank)</i></a>
+            <br>
+            <a href="https://media.tenor.com/images/f1828d6bddc96298b8d4d9fc4b326bdc/tenor.gif"
+                target="_self"><b>Segunda GIF</b><i>(_self)</i></a>
+            <br>
+        <p>CLIQUE NO LINK!!!</p>
+        <a href="link.html">
+            <p align="right"><img src="link.png" alt="Será que é esse link?"> </p>
+        </a>
+        </p>
+
+        <p>
+            Podemos também baixar um arquivo. Clique
+            <a href="link.png" download>aqui</a> para
+            fazer o download de uma pequena imagem.
+        </p>
+
+        <!-- Listas -->
+        <h2 id="listas">Listas (ul/ol)</h2>
+        <p>Temos dois tipos de listas:</p>
+
+        <ul>
+            <li>Não ordenadas: <i>ol</i></li>
+            <li>Ordenadas: <i>ul</i></li>
+            <li>Descritivas: <i> COMPLETAR </i></li>
+        </ul>
+
+        <h3 id="naoordenada">Listas Não Ordenadas <strong>UL</strong></h3>
+        <p>As marcações
+
+            <em>ul</em> e <em>/ul</em> são utilizadas para gerar listas não ordenadas (<strong>Unordered
+                lists</strong>). Estas tags devem envolver todo o
+            conjunto de itens da lista, e cada item deve ser precedido da marcação <em>li</em> (<strong>Line
+                item</strong>).
+        </p>
+        <p>
+            Listas não ordenadas possuem o parâmetro <em>TYPE</em> que podem ser dos seguintes tipos:
+        </p>
+        <ul>
+            <li type="Square">Square</li>
+            <li type="Circle">Circle</li>
+            <li type="Disc">Disc</li>
+            <li>Padrão</li>
+        </ul>
+        <p>
+            Vale mencionar que o parâmetro <em>type</em> pode ser usado tanto em <em>ul</em> como em <em>li</em>
+        </p>
+
+        <h3 id="ordenada">Lista Ordenadas <strong>OL</strong></h3>
+
+        <p>
+            As marcações utilizadas para gerar listas ordenadas (Ordered lists ) são <em>ol</em> e <em>/ol</em>. Estas
+            tags devem envolver todo o conjunto de itens da lista, e cada item deve ser precedido da marcação
+            <em>li</em>.
+        </p>
+        <p>
+            Assim como as <em>Listas Não Ordenadas</em> as <strong>Listas Ordenadas</strong> também possui o atributo
+            <em>type</em>, no entanto, ela também possui o elemento <em>start</em> que define o numero que iniciara a
+            lista.
+        </p>
+
+        <ol start="4">
+            <li type="1">Padrão (1)</li>
+            <li type="A">Alfabética Maiúscula (A)</li>
+            <li type="a">Alfabética Minúscula (a)</li>
+            <li type="I">Alfabética Romana Maiúscula (I)</li>
+            <li type="i">Alfabética Romana Minúscula (i)</li>
+        </ol>
+
+        <h3 id="descritiva">Lista de Definição</h3>
+        <p>
+            Uma <strong>lista de definições</strong> consiste em alternar um termo e uma definição. As tags
+            <em>dl</em> e <em>/dl</em> são utilizadas para gerar listas de definições.
+        </p>
+        <p>
+            Estes comandos devem envolver todo o conjunto de termos e definições da lista. Os termos devem ser
+            precedidos da marcação <em>dt</em> e as definições da marcação <em>dd</em>.
+        </p>
+        <dl>
+            <dt>Igredientes para o Bolo</dt>
+            <dd>Ovos</dd>
+            <dd>MAnteiga</dd>
+            <dd>Farinha</dd>
+            <dd>Achocolatado</dd>
+            <dd>Açúcar</dd>
+            <dd>Água</dd>
+            <dt>Produtos de Limpeza</dt>
+            <dd>Qboa</dd>
+            <dd>Detergente</dd>
+            <dd>Limpa Vidros</dd>
+            <dd>Sabão em pó</dd>
+        </dl>
+
+        <h2 id="aninhamento">Aninhamento de Listas</h2>
+        <p>
+            Vamos refazer a ultima lista, porem agora utilizaremos o <strong>Aninhamento de Listas</strong> para gerer
+            um resultado mais agradável.
+        </p>
+        <ul>
+            <li>Ingredientes para o Bolo
+                <dl>
+                    <dd>Ovos</dd>
+                    <dd>MAnteiga</dd>
+                    <dd>Farinha</dd>
+                    <dd>Achocolatado</dd>
+                    <dd>Açúcar</dd>
+                    <dd>Água</dd>
+                </dl>
+            </li>
+            <li>Produtos de Limpeza
+                <dl>
+                    <dd>Qboa</dd>
+                    <dd>Detergente</dd>
+                    <dd>Limpa Vidros</dd>
+                    <dd>Sabão em pó</dd>
+                </dl>
+            </li>
+        </ul>
+
+        <div id="menuvertical">
+            <h2>Menu Vertical</h2>
+            <p>
+                <a href="menuv.html">Veja aqui</a>
+            </p>
+            
+
+            <div id="menuhorizontal">
+                <h2>Menu Horizontal</h2>
+                <p>
+                    <a href="menuh.html">Veja aqui</a>
+                </p>
+            </div>
+
+            <!-----------------------Tabelas------------------------->
+            <h2 id="tabelas">Tabelas</h2>
+            <h3>Tabela Simples</h3>
+            <a href="tabelasimples.html">Veja aqui</a>
+
+            <h3>Tabela com span</h3>
+            <a href="tabelaspan.html">Veja aqui</a>
+            
+            <h3>Tabela com colgroup</h3>
+            <a href="tabelacolgroup.html">Veja aqui</a>
+            
+
+
+
+            <p align="center">
+                <a href="#inicio">Voltar para o inicio da página. <i>(ancora)</i></a>
+            </p>
+        </div>
+</body>
+
+</html>

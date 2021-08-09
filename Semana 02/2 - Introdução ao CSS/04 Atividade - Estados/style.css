@@ -1,0 +1,252 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.info {
+    word-wrap: break-word;
+    white-space: pre-line;
+
+}
+
+ul{
+    line-height: 0.95;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    background-color: lightblue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 250px;
+}
+
+td {
+    border: 3px solid;
+    max-width: 200px;
+    max-height: 150px;
+    border-radius: 1em;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 10px gray;
+
+}
+
+
+table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 30px;
+}
+
+
+img {
+    height: 175px;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    float: left;
+    margin-right: 2em;
+}
+
+#cell1 {
+    border-style: dashed;
+    border-color: aqua;
+    border-width: 4px;
+}
+
+#cell2 {
+    border-style: dotted;
+    border-color: red;
+    border-width: 7px;
+}
+
+#cell3 {
+    border-right-style: dashed;
+    border-left-style: groove;
+    border-color: purple;
+    border-width: 4px;
+}
+
+#cell4 {
+    border-style: groove;
+    border-color: peru;
+    border-width: 6px;
+}
+
+#cell5 {
+    border-style: solid;
+    border-color: pink;
+    border-width: 3px;
+}
+
+#cell6 {
+    border-style: ridge;
+    border-color: yellow;
+    border-width: 12px;
+}
+
+#cell7 {
+    border-style: outset;
+    border-color: green;
+    border-width: 5px;
+}
+
+#cell8 {
+    border-style: dotted;
+    border-color: blueviolet;
+    border-width: 8px;
+}
+
+#cell9 {
+    border-style: solid;
+    border-color: aqua;
+    border-width: 1px;
+}
+
+#cell10 {
+    border-style: double;
+    border-color: magenta;
+    border-width: 9px;
+}
+
+#cell11 {
+    border-style: dashed;
+    border-color: cyan;
+    border-width: 3px;
+}
+
+#cell12 {
+    border-style:inset;
+    border-color: rgb(41, 70, 107);
+    border-width: 14px;
+}
+
+#cell13 {
+    border-style: groove;
+    border-color: darkkhaki;
+    border-width: 4px;
+}
+
+#cell14 {
+    border-style: double;
+    border-color: darkolivegreen;
+    border-width: 1px;
+}
+
+#cell15 {
+    border-style: dotted;
+    border-color: darkorange;
+    border-width: 6px;
+}
+
+#cell16 {
+    border-style: dashed;
+    border-color: darkorchid;
+    border-width: 7px;
+}
+
+#cell17 {
+    border-right-style: dashed;
+    border-left-style: dotted;
+    border-top-style: dashed;
+    border-bottom-style: ridge;
+    border-color: darkred;
+    border-width: 5px;
+}
+
+#cell18 {
+    border-right-style: ridge;
+    border-left-style: dotted;
+    border-top-style: groove;
+    border-bottom-style: double;
+    border-color: lightslategray;
+    border-width: 4px;
+}
+
+#cell19 {
+    border-right-style: outset;
+    border-left-style: solid;
+    border-top-style: ridge;
+    border-bottom-style: groove;
+    border-color: darkgoldenrod;
+    border-width: 9px;
+}
+
+#cell20 {
+    border-right-style: groove;
+    border-left-style: ridge;
+    border-top-style: solid;
+    border-bottom-style: outset;
+    border-color: lightpink;
+    border-width: 3px;
+}
+
+#cell21 {
+    border-right-style: outset;
+    border-left-style: groove;
+    border-top-style: inset;
+    border-bottom-style: groove;
+    border-color: sienna;
+    border-width: 6px;
+}
+
+#cell22 {
+    border-right-style: groove;
+    border-left-style: groove;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-color: gold;
+    border-width: 7px;
+}
+
+#cell23 {
+    border-right-style: groove;
+    border-left-style: groove;
+    border-top-style: double;
+    border-bottom-style: double;
+    border-color: hotpink;
+    border-width: 10px;
+}
+
+#cell24 {
+    border-right-style: dashed;
+    border-left-style: dashed;
+    border-top-style: groove;
+    border-bottom-style: groove;
+    border-color: seagreen;
+    border-width: 4px;
+}
+
+#cell25 {
+    border-right-style: groove;
+    border-left-style: solid;
+    border-top-style: ridge;
+    border-bottom-style: outset;
+    border-color: indigo;
+    border-width: 14px;
+}
+
+#cell26 {
+    border-right-style: solid;
+    border-left-style: outset;
+    border-top-style: groove;
+    border-bottom-style: ridge;
+    border-color: navy;
+    border-width: 7px;
+}
+
+#cell27 {
+    border-right-style: groove;
+    border-left-style: dashed;
+    border-top-style: ridge;
+    border-bottom-style: outset;
+    border-color: yellowgreen;
+    border-width: 10px;
+}

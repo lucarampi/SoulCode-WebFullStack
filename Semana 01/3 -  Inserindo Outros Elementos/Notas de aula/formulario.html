@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form action="/pagina-processo-de-dados" method="POST">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Seu nome" autofocus />
+            </div>
+            <br>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" value="" placeholder="nome@email.com" required="" />
+            </div>
+            <br>
+            <div>
+                <label for="date">Data:</label>
+                <input type="date" id="date" />
+            </div>
+            <br>
+            <div>
+                <label for="phone">Celular:</label>
+                <input type="tel" id="phone" required="" placeholder="(xx) x-xxxx-xxxx" />
+            </div>
+            <br>
+            <div>
+                <label for="msg">Mensagem:</label>
+                <textarea id="msg" placeholder="Digite sua mensagem aqui" required=""></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="browsers">Informe seu navegador</label>
+                <input list="browsers" />
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Internet Explorer">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Tamanho da Camiseta</legend>
+                    <p>
+                        <label for="qtd">Quantidade</label>
+                        <input type="number" min="0" max="10" step="1" value="0" id="qtd" required="">
+                        <!--<input type="range" min="0" max="10" step="1" value="0" id="qtd">-->
+                    </p>
+                    <p>
+                        <label for="size_1">Pequeno</label>
+                        <input type="radio" name="size" id="size_1" value="small">
+                    </p>
+                    <p>
+                        <label for="size_2">Médio</label>
+                        <input type="radio" name="size" id="size_2" value="medium">
+                    </p>
+                    <p>
+                        <label for="size_3">Grande</label>
+                        <input type="radio" name="size" id="size_3" value="large">
+                    </p>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Qual sua relação com a <em>SoulCode</em>?</legend>
+                    <p>
+                        <label for="rel_2">Aluno</label>
+                        <input type="radio" name="rel" id="rel_2" value="student">
+                    </p>
+                    <p>
+                        <label for="rel_3">Professor</label>
+                        <input type="radio" name="rel" id="rel_3" value="teacher">
+                    </p>
+                    <p>
+                        <label for="rel_1">Nenhuma</label>
+                        <input type="radio" name="rel" id="rel_1" value="none">
+                    </p>
+                </fieldset>
+            </div>
+            <br>
+            <div class="button">
+                <button type="submit">Enviar Mensagem</button>
+                <button type="reset">Reiniciar</button>
+                <button type="button">Não faz nada</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
