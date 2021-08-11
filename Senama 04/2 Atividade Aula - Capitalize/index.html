@@ -9,39 +9,41 @@
 </head>
 
 <body>
-    <button onclick="initialize()">Gerar apostas</button>
+    <button onclick="initialize()">Click to insert your name</button>
 </body>
 
 <script>
-    var nome = "luca alfaro rampinelli"
+    //var name_input = new String("luca alfaro rampinelli")
+    var name_input = new String()
     var name_refact = new String()
 
-    // Com tratamento || sem arrow
-    function capitalizeArray(string = new String()) {
-        string.split(" ").forEach(function (value, index) {
-            if (value.length > 2) {
-                value = value[0].toUpperCase() + value.substring(1)
-            }
-                name_refact += " " + value 
-        })
-        name_refact = name_refact.replace(" ", "")
-        return name_refact
-    }
-
-
-    // // Sem tratamento || com arrow
+    // // Com tratamento || sem arrow
     // function capitalizeArray(string = new String()) {
-    //     string.split(" ").forEach(value => name_refact += " " + value[0].toUpperCase() + value.substring(1))
+    //     string.split(" ").forEach(function (value, index) {
+    //         if (value.length > 2) {
+    //             value = value[0].toUpperCase() + value.substring(1)
+    //         }
+    //             name_refact += " " + value 
+    //     })
     //     name_refact = name_refact.replace(" ", "")
     //     return name_refact
     // }
 
 
+    // Sem tratamento || com arrow
+    function capitalizeArray(string = new String()) {
+        string.split(" ").forEach(value => name_refact += " " + value[0].toUpperCase() + value.substring(1))
+        name_refact = name_refact.replace(" ", "")
+        console.log(name_refact)
+        return name_refact
+    }
+
+
 
     function initialize() {
-        nome = prompt("Insira seu nome não capitalizado: ")
-        alert(capitalizeArray(nome))
-        nome = ""
+        name_input = prompt("Type your name (not capitalized!): ")
+        alert(capitalizeArray(name_input))
+        name_input = ""
     }
 
 
