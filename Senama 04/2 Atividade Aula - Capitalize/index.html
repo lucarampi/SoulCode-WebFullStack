@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="initialize()">Gerar apostas</button>
+</body>
+
+<script>
+    var nome = "luca alfaro rampinelli"
+    var name_refact = new String()
+
+    // Com tratamento || sem arrow
+    function capitalizeArray(string = new String()) {
+        string.split(" ").forEach(function (value, index) {
+            if (value.length > 2) {
+                value = value[0].toUpperCase() + value.substring(1)
+            }
+                name_refact += " " + value 
+        })
+        name_refact = name_refact.replace(" ", "")
+        return name_refact
+    }
+
+
+    // // Sem tratamento || com arrow
+    // function capitalizeArray(string = new String()) {
+    //     string.split(" ").forEach(value => name_refact += " " + value[0].toUpperCase() + value.substring(1))
+    //     name_refact = name_refact.replace(" ", "")
+    //     return name_refact
+    // }
+
+
+
+    function initialize() {
+        nome = prompt("Insira seu nome não capitalizado: ")
+        alert(capitalizeArray(nome))
+        nome = ""
+    }
+
+
+</script>
+
+</html>
