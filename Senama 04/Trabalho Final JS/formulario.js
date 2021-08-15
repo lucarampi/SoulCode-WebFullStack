@@ -12,12 +12,12 @@ function validaNome(name) {
     if (name.value == '' || !isNaN(name.value)) {
         name.style.backgroundColor = 'rgb(246, 195, 195)';
         flag_name = false;
-        mostra();
+
         return flag_name
     }
     name.style.backgroundColor = 'white';
     flag_name = true;
-    mostra();
+
     return flag_name
 }
 
@@ -25,12 +25,12 @@ function validacaoEmail(element) {
     if (element.checkValidity() && element.value != "") {
         element.style.backgroundColor = "white"
         flag_email = true
-        mostra();
+
         return flag_email
     }
     element.style.backgroundColor = "rgb(246, 195, 195)"
     flag_email = false
-    mostra();
+
     return flag_email
 }
 
@@ -99,7 +99,7 @@ function valida(element) {
 function validaDia(element) {
     if (valida(element)) {
         flag_day = true;
-        mostra();
+
         return flag_day;
     }
     flag_day = false;
@@ -109,7 +109,7 @@ function validaDia(element) {
 function validaMes(element) {
     if (valida(element)) {
         flag_month = true;
-        mostra();
+
         return flag_month;
     }
     flag_month = false;
@@ -119,7 +119,7 @@ function validaMes(element) {
 function validaGenero(element) {
     if (valida(element)) {
         flag_gender = true;
-        mostra();
+
         return flag_gender;
     }
     flag_gender = false;
@@ -136,7 +136,7 @@ function validaAno() {
     }
     year.style.backgroundColor = "white";
     flag_year = true;
-    mostra();
+
     return flag_year;
 }
 
@@ -158,11 +158,12 @@ function calculateAge() {
 //função para aparecer a dive de boasvindas
 
 
-function mostra() {
+function mostra(event) {
+    event.preventDefault()
     if (flag_name && flag_cpf && flag_day && flag_month && flag_email && flag_gender) {
         set("#bem-vindo").innerHTML = `
         <p>
-        Olá ${get("#name").value}!<br>
+        Olá ${get("#name").value.toUpperCase()}!<br>
         Seu login é: ${get("#email").value}.<br>
         Voce tem ${calculateAge()} e se indentifica como uma pessoa do genero ${get("#gender").value} e pode usar seu CPF (${get("#cpf").value}) como senha.
         </p>
@@ -171,6 +172,18 @@ function mostra() {
     }
     console.log("NOP")
     return false
+}
+
+function resetFlags(){
+    console.log("resetou")
+    flag_name = false
+    flag_cpf = false
+    flag_day = false
+    flag_month = false
+    flag_year = false
+    flag_email = false
+    flag_gender = false
+    set("#bem-vindo").innerHTML = "<p></p>"
 
 
 }

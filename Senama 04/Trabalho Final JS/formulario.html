@@ -12,15 +12,14 @@
 <body>
     <h1>Pagina de Cadastro</h1>
     <main>
-        <form action="#" method="POST">
+        <form action="" method="POST">
             <section>
                 <div>
                     <input class="item1" type="text" name="name" id="name" onchange="validaNome(this)"
                         placeholder="Nome completo">
                 </div>
                 <div class="aumentar1">
-                    <input class="item1" type="text" id="cpf" onchange="isValidCPF()" placeholder="123.456.789-00">
-                    <!--maxleng limita campo de cpf para 11 digitos-->
+                    <input class="item1" type="text" id="cpf" onchange="validaCPF(this)" placeholder="123.456.789-00">
                 </div>
             </section>
             <section>
@@ -62,27 +61,43 @@
                 </div>
                 <div class="aumentar3">
                     <!--Gender-->
-                    <select class="item1" style="background-color: rgb(255, 255, 255);" id="gender" onchange="validaGenero(this)">
+                    <select class="item1" style="background-color: rgb(255, 255, 255);" id="gender"
+                        onchange="validaGenero(this)">
                         <option value="" disabled selected hidden>Sexo</option>
                         <option value="feminino">Feminino</option>
                         <option value="masculino">Masculino</option>
                         <option value="não binário">Não binário</option>
                     </select>
                 </div>
-                
+
+            </section>
+
+            <section>
+                <div class="aumentar4">
+                    <!--Botão reset-->
+                    <button class="item2" onclick="resetFlags()">Resetar formulário</button>
+                </div>
+
+
+                <div class="aumentar4">
+                    <!--Botão enviar-->
+                    <button class="item2" type="submit" onclick="mostra(event)">Enviar Mensagem</button>
+                </div>
+
             </section>
             <section>
                 <div id="retorno">
                     <button class="item2" onclick="window.location='index.html';">Retornar a pagina principal</button>
                 </div>
             </section>
-    
         </form>
+
 
 
         <!--Dive oculta de boas vindas-->
 
-
+        <div id="bem-vindo">
+        </div>
 
     </main>
     <script src="formulario.js"></script>
