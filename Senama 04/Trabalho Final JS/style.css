@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    word-wrap: break-word;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    text-indent: 1.5vw;
+    margin-top: 1vh;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 31px;
+}
+
+h3 {
+    margin-top: 27px;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+}
+
+header {
+    background-color: #5fbaa7;
+}
+
+.submenu {
+    margin-left: 1vw;
+}
+
+#about {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: justify;
+}
+
+#about p {
+    margin-bottom: 1vw
+}
+
+#founders {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#founders h2 {
+    padding-left: 2vw;
+}
+
+.card {
+    width: calc(100vw/5.5);
+    border: 1px solid #5fbaa7;
+    background-color: #d1ece7;
+    border-radius: 2vw;
+    padding: 3vh 1vw;
+    margin-top: 2vh;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.card img {
+    margin: 0 auto;
+    display: block;
+    border-radius: 1vw;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card:hover {
+    z-index: 1;
+    width: calc(100vw/5);
+}
+
+.card p {
+    text-indent: 0;
+    text-align: center;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 2vh 0;
+    font-size: larger;
+    background-color: inherit;
+    border-radius: 1rem;
+    margin-top: 1vh;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #5fbaa688;
+}
+
+#content {
+    margin-top: 5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#content h3 {
+    margin-top: 5vh;
+
+}
+
+#footer {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #5fbaa7;
+    padding: 5vh 0;
+}
+
+#footer ul {
+    list-style: none;
+}
+
+#footer img {
+    width: 10vw;
+}
+
+#copyright{
+    text-indent: 0;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    background-color: #007058;
+    color: whitesmoke;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pagina de Cadastro</title>
+</head>
+
+<body>
+    <h1>Pagina de Cadastro</h1>
+    <main>
+        <form action="#" method="POST">
+            <section>
+                <div>
+                    <input class="item1" type="text" name="name" id="name" onchange="validaNome(this)"
+                        placeholder="Nome completo">
+                </div>
+                <div class="aumentar1">
+                    <input class="item1" type="text" id="cpf" onchange="isValidCPF()" placeholder="123.456.789-00"
+                        maxlength="11">
+                    <!--maxleng limita campo de cpf para 11 digitos-->
+                </div>
+            </section>
+            <section>
+                <div class="aumentar2">
+                    <input class="item1" type="number" id="day" placeholder="Dia" min="0" max="31"
+                        onchange="validaDia(this)" oninput="validity.valid||(value='');" maxlength="2">
+                    <!--maxleng limita campo de dia para 2 digitos-->
+                </div>
+                <div class="aumentar2">
+                    <select class="item1" style="background-color: rgb(255, 255, 255);" id="month"
+                        onchange="validaMes(this)">
+                        <option value="" disabled selected hidden>Mês</option>
+                        <option value="0">Janeiro</option>
+                        <option value="1">Fevereiro</option>
+                        <option value="2">Março</option>
+                        <option value="3">Abril</option>
+                        <option value="4">Maio</option>
+                        <option value="5">Junho</option>
+                        <option value="6">Julho</option>
+                        <option value="7">Agosto</option>
+                        <option value="8">Setembro</option>
+                        <option value="9">Outubro</option>
+                        <option value="10">Novembro</option>
+                        <option value="11">Dezembro</option>
+                    </select>
+                </div>
+                <div class="aumentar2">
+                    <!--Year-->
+                    <input class="item1" type="number" id="year" placeholder="Ano" maxlength="4" onchange="validaAno()">
+                    <!--maxleng limita campo de anno para 4 digitos-->
+                </div>
+            </section>
+            <section>
+                <div>
+                    <!--E-mail-->
+                    <input class="item1" type="email" id="email" onchange="validacaoEmail(this)" placeholder="E-mail"
+                        size="29px">
+
+                </div>
+                <div class="aumentar3">
+                    <!--Gender-->
+                    <select class="item1" style="background-color: rgb(255, 255, 255);" id="gender" onchange="validaGenero(this)">
+                        <option value="" disabled selected hidden>Sexo</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="não binário">Não binário</option>
+                    </select>
+                </div>
+                
+            </section>
+            <section>
+                <div id="retorno">
+                    <button class="item2" onclick="window.location='index.html';">Retornar a pagina principal</button>
+                </div>
+            </section>
+    
+        </form>
+
+
+        <!--Dive oculta de boas vindas-->
+
+
+
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

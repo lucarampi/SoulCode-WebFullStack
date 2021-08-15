@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <meta name="Author" content=" Carolinna, Joao, Luca, Natalia, Nathalie ">
+    <!-- Carolinna Aureliano | Joao Valdevino -->
+    <link rel="shortcut icon" href="./images/csclothingfav.png" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <main>
+
+        <form class="container" formulariocontato action="#" method="POST">
+            <!-- <h2 class="h2_contact">Cadastro</h2> -->
+
+            <section class="row flex">
+                <!--Nome completo-->
+                <input class="item grow2" type="text" id="name" required placeholder="Nome completo" autofocus>
+                <!--CPF-->
+                <input class="item grow1" type="number" id="cpf" required placeholder="123.456.789-00">
+            </section>
+
+            <section class="row flex ">
+                <!--Day-->
+                <input class="item grow1" type="number" id="day" required placeholder="Dia" min="0"
+                    oninput="validity.valid||(value='');">
+                <!--Month-->
+                <select class="item grow1" id="month" required>
+                    <option value="" disabled selected hidden>Mês</option>
+                    <option value="0">Janeiro</option>
+                    <option value="1">Fevereiro</option>
+                    <option value="2">Março</option>
+                    <option value="3">Abril</option>
+                    <option value="4">Maio</option>
+                    <option value="5">Junho</option>
+                    <option value="6">Julho</option>
+                    <option value="7">Agosto</option>
+                    <option value="8">Setembro</option>
+                    <option value="9">Outubro</option>
+                    <option value="10">Novembro</option>
+                    <option value="11">Dezembro</option>
+                </select>
+
+                <!--Year-->
+                <input class="item grow1" type="number" id="year" required placeholder="Ano">
+
+
+            </section>
+
+            <section class="row flex">
+                <!--E-mail-->
+                <input class="item grow2" type="email" id="email" required placeholder="E-mail">
+
+                <!--Gender-->
+                <select class="item grow1" id="gender" required>
+                    <option value="" disabled selected hidden>Sexo</option>
+                    <option value="male">Feminino</option>
+                    <option value="female">Masculino</option>
+                    <option value="nb">Não binário</option>
+                </select>
+            </section>
+
+            <section class="flex row">
+                <!--Botão enviar-->
+                <button class="item grow1" type="submit">Enviar Mensagem</button>
+                <button class="item grow1" type="reset">Resetar formulário</button>
+            </section>
+
+            <section class="flex row">
+                <button class="item grow1" onclick="window.location='index.html';">Retornar a pagina principal</button>
+            </section>
+
+        </form>
+
+    </main>
+
+
+</body>
+<!-- Luca Rampinelli | Natalia Sousa | Nathalie Bozzon-->
+
+</html>
