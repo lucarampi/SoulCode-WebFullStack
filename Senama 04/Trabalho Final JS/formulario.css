@@ -5,6 +5,14 @@
     border: 0;
 }
 
+img.logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 3%;
+    cursor: pointer;
+}
+
 body {
     background-color: #5fbaa7;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -29,7 +37,6 @@ section {
     height: 80px;
     display: flex;
     flex-wrap: nowrap;
-
 }
 
 div {
@@ -38,9 +45,9 @@ div {
     flex-grow: 4;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
-form div{
-    border: solid 1px rgb(0, 0, 0);
 
+form div {
+    border: solid 1px rgb(0, 0, 0);
 }
 
 .aumentar1 {
@@ -88,7 +95,9 @@ form div{
     border-radius: 20px;
     /* borda dos botoes*/
 }
-
+input{
+    padding-left: 1vw;
+}
 
 select:focus,
 input:focus,
@@ -114,6 +123,10 @@ input[type=number] {
     font-size: large;
     text-align: left;
     word-wrap: break-word;
+}
+
+#bem-vindo p {
+    padding: 3vh 3vw;
 }
 
 #retorno {
