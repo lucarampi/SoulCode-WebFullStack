@@ -140,7 +140,7 @@ function validaGenero(element) {
 
 function validaAno() {
     var ref_var = new Date();//Cria objeto do tipo date
-    if (year.value >= ref_var.getFullYear() || year.value <= ref_var.getFullYear() - 130) { // Verifica futuro e limite de 130
+    if (year.value >= ref_var.getFullYear() || year.value < ref_var.getFullYear() - 131) { // Verifica futuro e limite de 130
         year.style.backgroundColor = "rgb(246, 195, 195)";
         alert("Ano invalido")
         flag_year = false;
@@ -154,13 +154,15 @@ function validaAno() {
 function calculateAge() {
     var ref_var = new Date(2021, 3, 16)//Cria um objeto do tipo Date e define a data como 2021/03/16 (Y/M/D)
     var day = get("#day").value //Pega o value do campo day
-    var month = get("#month").value //Pega o value do campo month
+    var month = get("#month").value//Pega o value do campo month
     var year = get("#year").value //Pega o value do campo year
     var birth = new Date(year, month, day);//Cria um objeto do tipo Date com a data de nascimento
 
-    var age = ref_var.getFullYear() - birth.getFullYear(); //Subtrai os anos e gera a idade
-    var m = ref_var.getMonth(3) - birth.getMonth(2); //Subtrai o mes de aniversário com o mes atual (2021/03/16)
-    if (m < 0 || (m == 0 && ref_var.getDate(21) < birth.getDate(22))) {
+
+    var age = ref_var.getFullYear() - birth.getFullYear();
+     //Subtrai os anos e gera a idade 131
+    var m = ref_var.getMonth() - birth.getMonth(); //Subtrai o mes de aniversário com o mes atual (2021/03/16)
+    if (m < 0 || (m == 0 && ref_var.getDate() < birth.getDate())) {
         //Verifica se ja passamos do mes de aniversário e se estiver no mesmo mes, vai verificar o dia.
         age--;
     }

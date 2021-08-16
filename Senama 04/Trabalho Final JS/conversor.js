@@ -119,9 +119,8 @@ tipo_saida.addEventListener('change', () => {
 });
 
 trocar.addEventListener('click', () => {
-  const temp = tipo_entrada.value;
+  const temp = tipo_entrada.value;//Salva o valor da variavel de entrada em uma variavel temporária
   tipo_entrada.value = tipo_saida.value;
   tipo_saida.value = temp;
-  console.log("sdasdasdasdas" +tipo_entrada.value)
   calculadora()
 });
