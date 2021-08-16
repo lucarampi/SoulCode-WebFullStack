@@ -142,7 +142,6 @@ function validaAno() {
     var ref_var = new Date();//Cria objeto do tipo date
     if (year.value >= ref_var.getFullYear() || year.value < ref_var.getFullYear() - 131) { // Verifica futuro e limite de 130
         year.style.backgroundColor = "rgb(246, 195, 195)";
-        alert("Ano invalido")
         flag_year = false;
         return flag_year;
     }
@@ -191,7 +190,7 @@ function mostra(event) {
         `//Insere uma tag <p>mensagem_de_boas_vindas</p> na página
         return true
     }
-    console.log("NOP")
+    set("#bem-vindo").innerHTML = ""
     return false
 }
 

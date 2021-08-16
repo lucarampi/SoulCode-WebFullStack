@@ -155,6 +155,13 @@ button {
     cursor: pointer;
     transition: 0.3s;
 }
+button:hover{
+    background-color: whitesmoke;
+}
+
+button:active{
+    background-color: rgb(228, 227, 227);
+}
 
 
 #content {
