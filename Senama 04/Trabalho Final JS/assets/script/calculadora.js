@@ -1,4 +1,3 @@
-
 //aparecer os botoes de cientifica
 var flag_cientifica = 0;
 function cientifica() {
@@ -18,7 +17,13 @@ function cientifica() {
 // incerir os numeros e operaçoes na div
 function insert(num) {
     var numero = document.getElementById("display").innerHTML;
+
+    if (numero.charAt(0) == "*" || numero.charAt(0) == "/") {
+        document.getElementById("display").innerHTML = "0" + numero + num;
+        return true
+    }
     document.getElementById("display").innerHTML = numero + num;
+    return false
 }
 
 
