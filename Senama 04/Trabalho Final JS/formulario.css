@@ -32,12 +32,15 @@ section {
 
 }
 
-form div {
+div {
     background-color: rgb(255, 255, 255);
     margin: 10px;
     flex-grow: 4;
-    border: solid 1px rgb(0, 0, 0);
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+form div{
+    border: solid 1px rgb(0, 0, 0);
+
 }
 
 .aumentar1 {

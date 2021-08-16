@@ -2,9 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     word-wrap: break-word;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 a {
@@ -19,14 +18,17 @@ p {
 
 h1 {
     font-size: 36px;
+    margin-top: 6px;
 }
 
 h2 {
     font-size: 31px;
+    margin-left: 27px;
 }
 
 h3 {
     margin-top: 27px;
+    color: black;
 }
 
 h1 {
@@ -40,10 +42,28 @@ header ul {
     justify-content: space-between;
     align-items: center;
     padding: 1vw;
+    font-weight: bold;
+    color: black;
+}
+
+li:hover {
+    background-color: #bfcfcc88;
+    border-radius: 1rem;
 }
 
 header {
     background-color: #5fbaa7;
+}
+
+.logo{
+    width: 10vh;
+
+}
+
+.menubuttons{
+    width: 4vh;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .submenu {
@@ -81,12 +101,13 @@ header {
     text-align: center;
 }
 
-.card img {
+.imagemhome {
     margin: 0 auto;
     display: block;
     border-radius: 1vw;
     width: 90%;
     margin: 0 auto;
+
 }
 
 .card:hover {
@@ -97,6 +118,7 @@ header {
 .card p {
     text-indent: 0;
     text-align: center;
+    color: black;
 }
 
 button {
@@ -105,7 +127,7 @@ button {
     text-align: center;
     width: 100%;
     padding: 2vh 0;
-    font-size: larger;
+    font-size: large;
     background-color: inherit;
     border-radius: 1rem;
     margin-top: 1vh;
@@ -113,9 +135,6 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
-    background-color: #5fbaa688;
-}
 
 #content {
     margin-top: 5vh;
@@ -134,16 +153,17 @@ button:hover {
     flex-direction: row;
     justify-content: space-evenly;
     background-color: #5fbaa7;
-    padding: 5vh 0;
+   
 }
 
 #footer ul {
     list-style: none;
 }
 
-#footer img {
-    width: 10vw;
+.footerlogo{
+width: 12vh;
 }
+
 
 #copyright{
     text-indent: 0;
@@ -151,6 +171,11 @@ button:hover {
     margin-top: 0;
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
-    background-color: #007058;
-    color: whitesmoke;
+    background-color: #5fbaa7;
+    color: #dadada;
 }
+
+.dark-mode {
+    background-color: rgb(59, 59, 59);
+    color: rgb(245, 244, 244);
+  }
