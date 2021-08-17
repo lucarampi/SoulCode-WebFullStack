@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../../jquery/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <p>Questão 1)</p>
+    <script>
+        $("p").hide();
+    </script>
+
+    <p>Questão 2 sem id)</p>
+    <p id="test">Questão 2 com id)</p>
+    <script>
+        $("#test").hide();
+    </script>
+
+    <p>Questão 3 sem class)</p>
+    <p class="test">Questão 3 com class)</p>
+    <p class="test">Questão 3 com class)</p>
+    <p>Questão 3 sem class)</p>
+    <script>
+        $(".test").hide();
+    </script>
+
+    <p>Questão 4 sem class)</p>
+
+    <a href="">Questão 5 [atribute = href]</a>
+    <script>
+        $("[href]").hide();
+    </script>
+
+    <p>Questão 6 ("tr:odd")</p>
+    <table>
+        <tr>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <script>
+        $("tr:odd").hide();
+    </script>
+
+
+
+    <!-- Versão development jQuery -->
+    <script>
+
+    </script>
+
+
+
+</body>
+
+</html>
