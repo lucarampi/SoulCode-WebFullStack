@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    body {
+        display: grid;
+        height: 97vh;
+        grid-template-columns: 100fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    p {
+        font-size: xx-large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div>
+        <p>Resize the page...</p>
+        <p>Resize the page...</p>
+    </div>
+
+
+    <script>
+        $(window).resize(function () {
+            windowSize()
+            documentSize()
+        });
+        function windowSize(element = $(window)){
+            let win_size = element.width() + " x " + element.height()
+            $("p").first().text("Window size: " + win_size)
+        }
+
+        function documentSize(element = $(document)) {
+            let doc_size = element.width() + " x " + element.height()
+            $("p").last().text("Document size: " + doc_size)
+        }
+    </script>
+</body>
+
+</html>
