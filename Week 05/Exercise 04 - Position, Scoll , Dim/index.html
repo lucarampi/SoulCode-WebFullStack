@@ -44,17 +44,6 @@
         align-items: center;
     }
 
-    #vertical_menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        list-style: none;
-        background-color: #1d1c27;
-        width: 100px;
-        height: 100vh;
-        align-items: center;
-    }
-
     /* Menu itens */
     .li_menu {
         display: flex;
@@ -81,13 +70,17 @@
         background-color: #2a2939;
     }
 
-    /* Menu border animation */
-    .vertical_menu_li_border:hover {
-        border-right: 5px solid #01fe96;
-    }
-
     .horizontal_menu_li_border:hover {
         border-bottom: 5px solid #01fe96;
+    }
+
+    #box {
+        width: 200px;
+        height: 300px;
+        overflow: auto;
+    }
+    button{
+        color: black;
     }
 </style>
 
@@ -107,26 +100,45 @@
     <main>
         <section>
             <h1>Lorem, ipsum dolor.</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum ut in accusamus doloribus, tempora
+            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum ut in accusamus doloribus,
+                tempora
                 repellat excepturi nesciunt, deserunt iusto necessitatibus consectetur quam quod ipsum veniam, beatae
                 dicta consequuntur ipsa laudantium totam illo. Ea neque assumenda maiores facilis quia earum,
                 perferendis dolorem qui repellendus eaque, repellat adipisci, amet totam aspernatur doloremque.</p>
+
+        </section>
+        <section>
+            <p id="box">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime neque facilis totam fugit delectus
+                debitis corrupti fugiat ipsa, deserunt doloribus omnis repellat, maiores quam voluptates esse minus iste
+                reprehenderit ducimus non quia impedit! Consequuntur voluptatem dolorum ad placeat in. Nulla nihil neque
+                quod commodi quis blanditiis, quisquam dolores consectetur totam aliquam inventore voluptatibus nam
+                debitis suscipit perspiciatis aperiam? Alias suscipit consequuntur culpa at aut deleniti error placeat
+                beatae minima vero, dicta maiores soluta sequi, asperiores inventore exercitationem. Doloribus fugiat
+                autem amet dolores, qui saepe earum expedita assumenda maxime voluptas facilis delectus numquam neque
+                molestias alias laudantium, officia maiores vitae praesentium?
+
+            </p>
+            <button>Clique aqui</button>
         </section>
     </main>
 
     <script>
-        console.log($("p").height(500).width(500))
+        console.log($("p.text").height(500).width(500))
 
-        console.log($("p").height())
+        console.log($("p.text").height())
 
-        console.log($("p").innerHeight())
+        console.log($("p.text").innerHeight())
         $(window).ready(() => {
 
             updateMenu()
             $(window).resize(() => updateMenu());
-            getElementPosition("p")
-            getElementOffset("p")
-
+            getElementPosition("p.text")
+            getElementOffset("p.text")
+            $("button").click(()=>{
+                let position_scrool_top = $("#box").scrollTop()
+                alert(position_scrool_top)
+            })
 
         })
         function getElementPosition(element) {
@@ -144,21 +156,13 @@
                 $("header").css({
                     'display': 'none',
                 })
-                // $("header nav ul").prop("id", "vertical_menu")
-                // $("header nav .li_menu").removeClass("horizontal_menu_li_border").addClass("vertical_menu_li_border")
-                // $("body").css({
-                //     'flex-direction' : 'row'
-                // })
+
             }
             else {
                 $("header").css({
                     'display': 'block',
                 })
-                // $("header nav ul").prop("id", "horizontal_menu")
-                // $("header nav .li_menu").removeClass("vertical_menu_li_border").addClass("horizontal_menu_li_border")
-                // $("body").css({
-                //     'flex-direction' : 'column'
-                // })
+
             }
         }
     </script>
