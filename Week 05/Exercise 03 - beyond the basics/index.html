@@ -13,6 +13,7 @@
 <body>
     <div>
         <h1>Title 1</h1>
+        <img src="#" alt="Image inside div">
     </div>
 
     <p>Paragraph 1</p>
@@ -42,8 +43,26 @@
         //6
         console.log($("#myLink").text("Demo"))
         console.log($("#myLink").attr({
-            'href':'https://www.demo.com'
+            'href': 'https://www.demo.com'
         }))
+
+        //7
+        $("p").append(" SIM!")
+
+        //8
+        $("p").prepend("SIM! ")
+
+        //9
+        $("p").remove();
+
+        //10
+        // $("div > * ").remove()
+        // OR
+        $("div").empty()
+
+        //11
+        $("div").remove(".test, .demo");
+
 
     </script>
 </body>
