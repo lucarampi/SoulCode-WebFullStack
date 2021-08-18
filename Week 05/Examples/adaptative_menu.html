@@ -107,37 +107,16 @@
     <main>
         <section>
             <h1>Lorem, ipsum dolor.</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum ut in accusamus doloribus, tempora
-                repellat excepturi nesciunt, deserunt iusto necessitatibus consectetur quam quod ipsum veniam, beatae
-                dicta consequuntur ipsa laudantium totam illo. Ea neque assumenda maiores facilis quia earum,
-                perferendis dolorem qui repellendus eaque, repellat adipisci, amet totam aspernatur doloremque.</p>
         </section>
     </main>
 
     <script>
-        console.log($("p").height(500).width(500))
-
-        console.log($("p").height())
-
-        console.log($("p").innerHeight())
         $(window).ready(() => {
-
+            
             updateMenu()
             $(window).resize(() => updateMenu());
-            getElementPosition("p")
-            getElementOffset("p")
-
 
         })
-        function getElementPosition(element) {
-            let position = $(element).position()
-            alert("Esquerda: " + position.left + '\n' + "Topo: " + position.top)
-        }
-        function getElementOffset(element) {
-            let offset = $(element).offset()
-            alert("Esquerda: " + offset.left + '\n' + "Topo: " + offset.top)
-        }
-
 
         function updateMenu(element = $(window)) {
             if (element.width() < 800) {
@@ -153,6 +132,7 @@
             else {
                 $("header").css({
                     'display': 'block',
+
                 })
                 // $("header nav ul").prop("id", "horizontal_menu")
                 // $("header nav .li_menu").removeClass("vertical_menu_li_border").addClass("horizontal_menu_li_border")
