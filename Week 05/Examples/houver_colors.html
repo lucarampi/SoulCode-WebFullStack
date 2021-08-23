@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <p id="box1">Hover this paragraph!</p>
+        <p id="box2">Click tounbind the event.</p>
+        <p id="box3">Click to bind/unbind the event.</p>
+        <p id="box4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+            voluptas! Consectetur omnis neque
+            repellat
+            quaerat totam unde quisquam. Sunt suscipit sit deserunt explicabo ad iusto soluta incidunt aspernatur
+            laboriosam ullam!</p>
+
+    </div>
+    <script>
+        $(window).ready(() => {
+            //change background color on mouse over
+            $("#box1").mouseover(function () {
+                $(this).css({ 'background-color': 'aqua' })
+            })
+            //rollback background color on mouse leave
+            $("#box1").mouseleave(function () {
+                $(this).css({ backgroundColor: 'inherit' })
+            })
+            //----------------------------------------------------
+            // Binding events
+            $("#box2").bind("mouseover", function () {
+                $("#box2").css({ backgroundColor: "crimson" })
+            })
+            $("#box2").bind("mouseout", function () {
+                $("#box2").css({ backgroundColor: 'inherit' })
+            })
+            // Unbinding  events
+            $("#box2").click(function () {
+                $("#box2").unbind()
+            })
+        })//----------------------------------------------------
+        // Binding events with flags
+        var flag_bind = true
+        // Unbinding  events
+        $("#box3").click(function () {
+            if (flag_bind == false) {
+                $("#box3").unbind()
+                alert("Unbinded")
+                flag_bind = true
+
+            }
+            else {
+                $("#box3").bind("mouseover", function () {
+                    $("#box3").css({ backgroundColor: "crimson" })
+                })
+                $("#box3").bind("mouseout", function () {
+                    $("#box3").css({ backgroundColor: 'inherit' })
+                })
+                flag_bind = false
+                alert("Binded")
+            }
+        })
+        //----------------------------------------------------
+        //change background color on mouse over
+        $("#box4").mousedown(function () {
+            $(this).css({ 'background-color': 'green' })
+        })
+        //rollback background color on mouse leave
+        $("#box4").mouseup(function () {
+            $(this).css({ backgroundColor: 'inherit' })
+        })
+    </script>
+</body>
+
+</html>

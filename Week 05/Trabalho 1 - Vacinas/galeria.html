@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/aboutUs.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="./assets/js/time.js"></script>
+    <title>Galeria</title>
+</head>
+
+<style>
+      #slideshow {
+        margin: 0 auto;
+        position: relative;
+        width: 60%;
+        padding: 200px;
+        /*56.25 is for 16x9 resolution*/
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+        box-sizing: border-box;
+        margin-top: 20px;
+    }
+
+    #slideshow div {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    #slideshow div img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    .thumbnail img {
+        margin-top: 30px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+        height: 95px;
+    }
+
+    .thumbnail img:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+</style>
+
+<body>
+    <section class="time"></section>
+    <header>
+        <nav>
+            <ul id="header">
+                <ul>
+                    <li class="logo_li"><img src="./images/LOGO.png" alt="">
+                    </li>
+                    <li class="fix_img_text">SAÚDE</li>
+                </ul>
+                <ul id="accessibility">
+                    <li>A-</li>
+                    <li>A+</li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    <nav>
+        <ul id="horizontal_menu">
+            <li><a href="aboutUs.html">QUEM SOMOS</a></li>
+            <li><a href="cadastro.html">FORMULARIO</a></li>
+            <li><a href="leito.html">LEITOS</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+        </ul>
+        <hr>
+    </nav>
+
+    <main>
+        <main>
+            <h1 id="slideshow_h1">Campanha de Vacinação</h1>
+            <section id="slideshow">
+                <div class="slideitem">
+                    <img src="./img/foto1.jpg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto2.jpg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto3.jpg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto9.jpg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto4.jpg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto5.jpg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto6.png">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto11.jpg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto8.jpeg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto12.jpg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto13.jpeg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto10.jpg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto14.jpg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto15.jpeg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto7.png">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto16.jpeg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto17.jpg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto18.jpg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto19.jpg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto20.jpg">
+                </div>
+                <div class="slideitem">
+                    <img src="./img/foto21.jpg">
+                </div>
+                
+            </section>
+            <section class="thumbnail">
+                <img src="./img/foto1.jpg" class="imgthumbnail">
+                <img src="./img/foto2.jpg" class="imgthumbnail">
+                <img src="./img/foto3.jpg" class="imgthumbnail">
+                <img src="./img/foto4.jpg" class="imgthumbnail">
+                <img src="./img/foto9.jpg" class="imgthumbnail">
+                <img src="./img/foto5.jpg" class="imgthumbnail">
+                <img src="./img/foto6.png" class="imgthumbnail">
+                <img src="./img/foto11.jpg" class="imgthumbnail">
+                <img src="./img/foto8.jpeg" class="imgthumbnail">
+                <img src="./img/foto12.jpg" class="imgthumbnail">
+                <img src="./img/foto13.jpeg" class="imgthumbnail">
+                <img src="./img/foto10.jpg" class="imgthumbnail">
+                <img src="./img/foto14.jpg" class="imgthumbnail">
+                <img src="./img/foto15.jpeg" class="imgthumbnail">
+                <img src="./img/foto7.png" class="imgthumbnail">
+                <img src="./img/foto16.jpeg" class="imgthumbnail">
+                <img src="./img/foto17.jpg" class="imgthumbnail">
+                <img src="./img/foto18.jpg" class="imgthumbnail">
+                <img src="./img/foto19.jpg" class="imgthumbnail">
+                <img src="./img/foto20.jpg" class="imgthumbnail">
+                <img src="./img/foto21.jpg" class="imgthumbnail">
+
+            </section>
+        </main>
+
+        <footer>
+            <section id="footer_menu">
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+
+                </ul>
+
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+
+                </ul>
+
+
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+
+                </ul>
+            </section>
+
+            <section id="copyright">
+                <p>Curva do Tiroteio - Passa 7 - RS, 01426-001 | &copy HealthCare .LTDA | todos os
+                    direitos reservados </p>
+            </section>
+        </footer>
+        <script>
+            $(document).ready(function () {
+                $("#slideshow div:gt(0)").hide();
+                // gt(0) é pra pegar o indice 0
+                setInterval(function () {
+                    $('#slideshow  div:first')
+                    // slideShow
+                        .fadeOut(1000)
+                        // fadeOut
+                        .next()
+                        .fadeIn(1000)
+                        // fadeIn
+                        .end()
+                        .appendTo('#slideshow');
+                }, 3000);
+
+            });
+            $("a").fadeIn(3000)//efeito no menu, aplicado display none na unidade respectiva
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+#tabs{
+    border: solid 1px rgb(214, 214, 214);   
+}
+
+#tabs li{
+    border: none;
+    background-color: rgb(74, 128, 114);
+}
+
+#tabs ul{
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+#accordion{
+    border: solid 1px rgb(214, 214, 214);
+}
+
+#accordion h3{
+    background-color: rgb(74, 128, 114);
+}
+#accordion-1{
+    background-color: rgb(255, 255, 255);
+}

@@ -64,6 +64,7 @@
         height: 100%;
         width: 100%;
         text-align: center;
+        transition: 300ms;
     }
 
     .li_logo {
@@ -112,7 +113,7 @@
 
     <script>
         $(window).ready(() => {
-            
+
             updateMenu()
             $(window).resize(() => updateMenu());
 
@@ -120,25 +121,18 @@
 
         function updateMenu(element = $(window)) {
             if (element.width() < 800) {
-                $("header").css({
-                    'display': 'none',
+                $("header nav ul").prop("id", "vertical_menu")
+                $("header nav .li_menu").removeClass("horizontal_menu_li_border").addClass("vertical_menu_li_border")
+                $("body").css({
+                    'flex-direction': 'row'
                 })
-                // $("header nav ul").prop("id", "vertical_menu")
-                // $("header nav .li_menu").removeClass("horizontal_menu_li_border").addClass("vertical_menu_li_border")
-                // $("body").css({
-                //     'flex-direction' : 'row'
-                // })
             }
             else {
-                $("header").css({
-                    'display': 'block',
-
+                $("header nav ul").prop("id", "horizontal_menu")
+                $("header nav .li_menu").removeClass("vertical_menu_li_border").addClass("horizontal_menu_li_border")
+                $("body").css({
+                    'flex-direction': 'column'
                 })
-                // $("header nav ul").prop("id", "horizontal_menu")
-                // $("header nav .li_menu").removeClass("vertical_menu_li_border").addClass("horizontal_menu_li_border")
-                // $("body").css({
-                //     'flex-direction' : 'column'
-                // })
             }
         }
     </script>
