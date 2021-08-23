@@ -115,35 +115,6 @@
       align-items: center;
   }
 
-/* style button up below  */
-
-  #dynamicTop {
-    display: none;
-    position: fixed;
-    bottom: 70px;
-    right: 5px;
-    overflow: hidden;
-    width: 51px;
-    height: 51px;
-    border: none;
-    text-indent: 100%;
-    background: url('/img/ui.totop.png') no-repeat left top;
-}
-#dynamicTopHover {
-    background: url('/img/ui.totop.png') no-repeat left -51px;
-    width: 51px;
-    height: 51px;
-    display: block;
-    overflow: hidden;
-    float: right;
-    opacity: 0;
-    -moz-opacity: 0;
-    filter:alpha(opacity=0);
-}
-#dynamicTop:active, #dynamicTop:focus {
-    outline: none;
-}
-
 
 
 #footer_menu {

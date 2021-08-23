@@ -13,6 +13,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="./assets/js/cadastro.js"></script>
     <script src="./assets/libs/jquery-ui.js"></script>
+    <script src="./assets/js/fontsize.js"></script>
     <script src="./assets/libs/jquery.mask.min.js"></script>
     <title>Cadastre-se</title>
 </head>
@@ -28,8 +29,8 @@
                     <li class="fix_img_text" >SAÚDE</li>
                 </ul>
                 <ul id="accessibility">
-                    <li>A-</li>
-                    <li>A+</li>
+                    <li id="decrease-font">A-</li>
+                    <li id="increase-font">A+</li>
                 </ul>
             </ul>
         </nav>
@@ -41,7 +42,7 @@
             <li><a href="leito.html">LEITOS</a></li>
             <li><a href="galeria.html">GALERIA</a></li>
         </ul>
-        <hr>
+        
     </nav>
 
     <main>
@@ -257,36 +258,40 @@
 
     </main>
 
-    <footer>
-        <section id="footer_menu">
-            <ul>
-                <li>Link 1</li>
-                <li>Link 2</li>
-                <li>Link 3</li>
+    
+  <footer>
+    <section id="footer_menu">
+      <a href="#" id="dynamicTop" style="display: none;">
+        <span id="dynamicTopHover" style="opacity: 0;"></span>
+        "Ir para o topo"
+      </a>
+      <div>
+        <li id="logo_li"><img src="./images/LOGO.png" alt="">
+      </div>
+      <div>
+        <ul>
+          <li>Mapa do site</li>
+          <li>Contato</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Fale conosco</li>
+          <li>Politica de privacidade</li>
+        </ul>
+      </div>
+      <div>
+        <a href=”home.html” target=”blank”><img src="/img/anticovid.png" id="social-3" alt=”Nosso perfil no
+            Facebook”></a>
+      </div>
 
-            </ul>
+    </section>
 
-            <ul>
-                <li>Link 1</li>
-                <li>Link 2</li>
-                <li>Link 3</li>
-
-            </ul>
-
-
-            <ul>
-                <li>Link 1</li>
-                <li>Link 2</li>
-                <li>Link 3</li>
-
-            </ul>
-        </section>
-
-        <section id="copyright">
-            <p>Curva do Tiroteio - Passa 7 - RS, 01426-001 | &copy HealthCare .LTDA | todos os
-                direitos reservados </p>
-        </section>
-    </footer>
+    <section id="copyright">
+      <p>Desenvolvedor Fullstack | &copy HealthCare .LTDA | todos os
+        direitos reservados </p>
+    </section>
+  </footer>
 
 
     <script>

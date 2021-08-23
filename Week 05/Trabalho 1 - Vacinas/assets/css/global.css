@@ -5,13 +5,12 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-body{
+body {
     background-color: #EBF2F0;
+    margin-top: 6vw;
 }
 
-body,
-main,
-footer {
+main {
     display: flex;
     flex-direction: column;
     gap: 3vw;
@@ -33,7 +32,7 @@ nav {
     width: 100%;
 }
 
-#header{
+#header {
     justify-content: space-between;
     height: 5vw;
     align-items: center;
@@ -43,7 +42,7 @@ nav {
     margin-top: 3vw;
     background-color: rgb(74, 128, 114);
     color: white;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 #accessibility {
@@ -70,10 +69,11 @@ nav {
     margin-top: 6vw;
     cursor: pointer;
 }
-a{
+
+a {
     display: none;
     text-decoration: none;
-    color:black
+    color: black
 }
 
 #horizontal_menu li:hover {
@@ -132,9 +132,75 @@ p {
     padding: 4vw;
 }
 
-footer {
+
+#copyright {
+    text-align: center;
+    color: white;
     background-color: rgb(74, 128, 114);
-    color: azure    ;
+}
+
+/* style button up below  */
+
+#dynamicTop {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 5px;
+    overflow: hidden;
+    width: 51px;
+    height: 51px;
+    border: none;
+    text-indent: 100%;
+    background: url('/img/ui.totop.png') no-repeat left top;
+}
+
+#dynamicTopHover {
+    background: url('/img/ui.totop.png') no-repeat left -51px;
+    width: 51px;
+    height: 51px;
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#dynamicTop:active,
+#dynamicTop:focus {
+    outline: none;
+}
+
+/* Img footer below */
+
+#social-3 {
+    margin-top: 2vw;
+    width: 10vw;
+}
+
+#logo_li img {
+    width: 10vw;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+#footer_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vw 4vw 0 4vw;
+}
+
+footer {
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(74, 128, 114);
+    color: azure;
     gap: 0;
 }
 
