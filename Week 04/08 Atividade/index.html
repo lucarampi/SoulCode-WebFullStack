@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+//--------------------------------------------------------------------
+// .push()
+    var teste = ["F", "r", 2, 3, 5, 2, 6, "J", "a", "T", 1, 2, 4];
+    var aux = []
+    
+    for (i = teste.length - 1; i >= 0; i--) {
+        aux.push(teste[i])
+    }
+    alert("Com push(): " + aux)
+//--------------------------------------------------------------------
+// .unshift()
+    var aux = []
+    for (i = 0; i < teste.length; i++) {
+        aux.unshift(teste[i])
+    }
+    alert("Com unshift(): " + aux)
+
+//--------------------------------------------------------------------
+// .reverse()
+    var aux = teste.reverse()
+    alert("Com .reverse(): " + aux)
+
+</script>
+
+<body>
+
+
+
+
+</body>
+
+</html>

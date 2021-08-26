@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Fromulário de devolução</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="inputName">Full Name</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Your name here">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6 col-sm-1">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="your@email.com">
+                </div>
+
+                <div class="form-group col-md-6 col-sm-1">
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="At least 8 digits">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-9">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Av. João Cabral">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputHouseNumber">Number/Apt.</label>
+                    <input type="text" class="form-control" id="inputHouseNumber" placeholder="321 white house">
+                </div>
+            </div>
+
+            <!-- RADIOS -->
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="addressRadios" id="homeAddress" value="option1"
+                    checked>
+                <label class="form-check-label" for="homeAddress">
+                    Home Address
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="addressRadios" id="workAddress" value="option2">
+                <label class="form-check-label" for="workAddress">
+                    Work Address
+                </label>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="San Francisco">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                        <option selected disabled hidden>Choose your State</option>
+                        <option>...</option>
+                        <option>...</option>
+                        <option>...</option>
+                        <option>...</option>
+                        <option>...</option>
+                        <option>...</option>
+                        <option>...</option>
+                        <option>...</option>
+                        <option>...</option>
+                        <option>...</option>
+
+                    </select>
+                </div>
+
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip Code</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+
+            <!-- CHECK BOXES -->
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="spamCheck">
+                    <label class="form-check-label" for="spamCheck">
+                        I agree receiving spam.
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

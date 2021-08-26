@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08 Atividade</title>
+</head>
+
+<body>
+
+
+   <p> Enter your name: </p><input type="text" onfocus="applyGreen(0)" onblur="applyRed(0)">
+    <br>
+    <p>Enter e-mail:</p> <input type="email" onfocus="applyGreen(1)" onblur="applyRed(1)">
+    <br>
+    <p>Enter your password:</p> <input type="" onfocus="applyGreen(2)" onblur="applyRed(2)">
+
+
+
+</body>
+
+<script>
+
+
+    function applyRed(n) {
+        document.getElementsByTagName("input")[n].style.backgroundColor = "red";
+    }
+    function applyGreen(n) {
+        document.getElementsByTagName("input")[n].style.backgroundColor = "green";
+    }
+</script>
+
+</html>

@@ -1,0 +1,70 @@
+section,
+header {
+    border: 2px solid;
+}
+
+.esquerda {
+    width: 18%;
+    height: 500px;
+    float: left;
+}
+
+.centro {
+    margin: 10px auto;
+    width: 90%;
+    height: 92.25%;
+}
+
+.meio {
+    float: left;
+    width: 59%;
+    height: 500px;
+}
+
+header{
+    clear: both;
+    width: 98%;
+    height: 27.5%;
+    margin: 10px auto;
+}
+
+.tres{
+    float: left;
+    width: 30.3%;
+    height: 27.5%;
+    margin: 10px 10px;
+}
+
+.umdedois{
+    float: left;
+    width: 46%;
+    height: 27.5%;
+    margin: 10px 10px;
+}
+.doisdedois{
+    float: right;
+    width: 46%;
+    height: 137px;
+    margin: 10px 10px;
+}
+
+.direita{
+    float: right;
+    width: 18%;
+    height: 500px;
+    float: left;
+}
+
+.cima{
+    clear: both;
+    width: 90%;
+    height: 44.7%;
+    margin: 10px auto;
+}
+
+.baixo{
+    clear: both;
+    width: 90%;
+    height: 44.7%;
+    margin: 10px auto;
+}

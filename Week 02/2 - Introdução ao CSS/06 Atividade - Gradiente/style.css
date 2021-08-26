@@ -1,0 +1,109 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px solid;
+}
+
+
+#cell1 {
+    background-image: linear-gradient(to top left, white, green);
+    border: 2px solid;
+}
+
+#cell2 {
+    background-image: linear-gradient(to top left, purple, yellow);
+    border: 2px solid;
+}
+
+#cell3 {
+    background-image: linear-gradient(to top right, pink, orange, black);
+    border: 2px solid;
+}
+
+#cell4 {
+    background-image: linear-gradient(to top right, blue, brown);
+    border: 2px solid;
+}
+
+/* LINHA 2*/
+
+#cell5 {
+    background-image: repeating-linear-gradient(to top left, white 50%, green);
+    border: 2px solid;
+}
+
+#cell6 {
+    background-image: repeating-linear-gradient(to top left, purple 30%, yellow);
+    border: 2px solid;
+}
+
+#cell7 {
+    background-image: repeating-linear-gradient(to top right, pink, orange, black 20%);
+    border: 2px solid;
+}
+
+#cell8 {
+    background-image: repeating-linear-gradient(to top right, blue, brown 10%);
+    border: 2px solid;
+}
+
+/* LINHA 3*/
+
+#cell9 {
+    background-image: radial-gradient(white 50%, green);
+    border: 2px solid;
+}
+
+#cell10 {
+    background-image: radial-gradient(purple 30%, yellow);
+    border: 2px solid;
+}
+
+#cell11 {
+    background-image: radial-gradient(pink, orange, black 20%);
+    border: 2px solid;
+}
+
+#cell12 {
+    background-image: radial-gradient(blue, brown 10%);
+    border: 2px solid;
+}
+
+/* LINHA 4*/
+
+#cell13 {
+    background-image: repeating-radial-gradient(white 50%, green);
+    border: 2px solid;
+}
+
+#cell14 {
+    background-image: repeating-radial-gradient(purple 30%, yellow);
+    border: 2px solid;
+}
+
+#cell15 {
+    background-image: repeating-radial-gradient(pink, orange, black 20%);
+    border: 2px solid;
+}
+
+#cell16 {
+    background-image: repeating-radial-gradient(blue, brown 10%);
+    border: 2px solid;
+}

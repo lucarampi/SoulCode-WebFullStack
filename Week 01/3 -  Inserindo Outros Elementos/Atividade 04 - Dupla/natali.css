@@ -1,0 +1,17 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-weight: lighter;
+    color: violet;
+    text-align: center;
+    background-color: lemonchiffon;
+}
+
+img{
+    width: 20%;
+}
+#foto{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    transform: rotate(-90deg);
+}
+

@@ -1,0 +1,86 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.info {
+    word-wrap: break-word;
+    white-space: pre-line;
+
+}
+
+ul {
+    margin: 0px 0px 10px 0px;
+    line-height: 0.95;
+}
+
+body {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b6/Blank_Map_of_Brazil.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    background-color: lightblue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 250px;
+}
+
+td {
+    border: 3px solid;
+    max-width: 200px;
+    max-height: 150px;
+    border-radius: 1em;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 10px gray;
+
+}
+
+
+table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 30px;
+}
+
+
+img {
+    height: 175px;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    float: left;
+    margin-right: 2em;
+}
+
+.norte {
+    border-color: lightgreen ;
+}
+
+.sul {
+    border-color: blue ;
+}
+
+.nordeste {
+    border-color: orange ;
+}
+
+.sudeste {
+    border-color:darkgreen ;
+}
+
+.centroeste {
+    border-color:yellow ;
+}

@@ -20,7 +20,7 @@ function contador() {
     for (let i = 0; i < cont.length; i++) {
         soma += cont[i];
     }
-    soma = soma * 9.5
+    soma = soma * 10
     return soma
 }
 

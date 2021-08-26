@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" method="POST" align="left">
+        <fieldset style="max-width: 60%;">
+            <table>
+                <tr>
+                    <td>
+                        <!--Nome Completo-->
+                        <label for="name">Nome completo:</label>
+                        <input type="text" id="name" required placeholder="João da Silva" autofocus>
+                    </td>
+                    <td>
+                        <!--Data de nascimento-->
+                        <label for="birth_date">Data de nascimento:</label>
+                        <input type="date" id="birth_date" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!--Endereço de e-mail-->
+                        <label for="email">Seu e-mail:</label>
+                        <input type="email" id="email" required placeholder="seuemail@email.com">
+
+                    </td>
+                    <td>
+                        <!--Tipo Sanguineo-->
+                        <label for="blood_type">Tipo Sanguineo:</label>
+                        <input type="text" id="blood_type" required placeholder="AB">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!--Rua-->
+                        <label for="rua">Rua:</label>
+                        <input type="text" id="rua" required placeholder="Av. João Augustino">
+                    </td>
+                    <td>
+                        <!--Fator RH-->
+                        <label for="rh_factor">Fator RH:</label>
+                        <input type="text" id="rh_factor" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!--Numero da residência-->
+                        <label for="residence_number">Numero:</label>
+                        <input type="number" id="residence_number" required placeholder="18">
+                    </td>
+                    <td>
+                        <!--Vacinas aplicadas-->
+                        <label for="vacuum_applied">Vacinas aplicadas:</label>
+                        <textarea name="vacuum_applied" id="vacuum_applied" cols="20" rows="1" required
+                            placeholder="Tetano, Malária, Dengue,..."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!--Bairro-->
+                        <label for="district">Bairro:</label>
+                        <input type="text" id="district" required placeholder="Trindade">
+
+                    </td>
+                    <td>
+                        <!--Comorbidade-->
+                        <label for="comorbidity">Comorbidade:</label>
+                        <textarea name="comorbidity" id="comorbidity" cols="20" rows="1" required
+                            placeholder="Obesidade, ..."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!--Complemento-->
+                        <label for="tip">Complemento:</label>
+                        <input type="text" id="tip" required placeholder="Apt. 305 próximo ao posto">
+                    </td>
+                    <td>
+                        <!--Contato de emergência-->
+                        <label for="emergency_number">Contato para emergência:</label>
+                        <input type="text" id="emergency_number" pattern="^[0-9]" required
+                            placeholder="(48) 9 9990-6699">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!--CEP-->
+                        <label for="CEP">CEP:</label>
+                        <input type="text" id="CEP" pattern="^[0-9]" required placeholder="88752-005">
+                    </td>
+                    <td>
+                        <!--Cor de atendimento-->
+                        <label for="priority_color">Selecione sua prioridade:</label>
+                        <input list="priority_color" />
+                        <datalist id="priority_color">
+                            <option value="Vermelho"><
+                            <option value="Laranja">
+                            <option value="Amarelo">
+                            <option value="Verde">
+                            <option value="Azul">
+                        </datalist>
+                    </td>
+                    <td style="font-size: 12px;">
+                        <dl>
+                            <dt>
+                                Prioridade de cores:
+                            <dd>
+                                <ol>
+                                    <li>Vermelho</li>
+                                    <li>Laranja</li>
+                                    <li>Amarelo</li>
+                                    <li>Verde</li>
+                                    <li>Azul</li>
+                                </ol>
+                            </dd>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!--Unidade Federativa-->
+                        <label for="state">Estado:</label>
+                        <input type="text" id="state" required placeholder="Paraná">
+                    </td>
+                    <td>
+                        <!--Velocidade do atendimento-->
+                        <label for="speed">Velocidade do atendimento:</label>
+                        <input type="range" min="1" max="3" value="1" class="slider" id="speed">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!--Cidade-->
+                        <label for="city">Cidade:</label>
+                        <input type="text" id="city" required placeholder="Curitiba">
+                    </td>
+                    <td>
+                        <!--Observções-->
+                        <label for="obs">Observaçoes:</label>
+                        <textarea name="obs" id="obs" cols="20" rows="2" required
+                            placeholder="Alergia a ..."></textarea>
+                    </td>
+                </tr>
+                <tr >
+                    <td  colspan="3" align="center">
+                        <br>
+                        <button type="submit">Enviar Mensagem</button>
+                        <button type="reset">Reiniciar</button>
+                        <button type="button">Não faz nada</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
